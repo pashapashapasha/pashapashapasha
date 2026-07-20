@@ -115,7 +115,10 @@
       white-space: nowrap;
     }
     .tabs a:hover { color: var(--cardinal); text-decoration: none; }
-    @media (max-width: 640px) { .tabs a { padding: 14px 12px 11px; font-size: 14px; } }
+    @media (max-width: 640px) {
+      .tabs-inner { justify-content: flex-start; padding: 0 8px; }
+      .tabs a { padding: 14px 12px 11px; font-size: 14px; }
+    }
 
     /* ===== Sections ===== */
     main { padding: 16px 0 24px; }
